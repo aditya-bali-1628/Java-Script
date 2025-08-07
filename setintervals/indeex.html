@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Intervals</title>
+    <style>
+        .container {
+            padding: 30px;
+            margin: 30px;
+            border: 2px solid black;
+            height: 40px;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <script>
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1},${val2},${val3})`;
+        }
+
+        //  let a = setInterval(() => {
+        //     document.querySelector(".box").style.background = getRandomColor();
+        //     console.log(a)
+        // }, 1000);
+
+          let a = setTimeout(() => {
+            document.querySelector(".box").style.background = getRandomColor();
+            console.log(a);
+        }, 5000);
+    </script>
+</body>
+
+</html>
